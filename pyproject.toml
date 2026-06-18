@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appgithubaction"
+version = "0.1.0"
+description = "A Python project with math operations"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "pytest",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["src"]
