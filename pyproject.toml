@@ -17,3 +17,8 @@ dev = ["pytest"]
 
 [tool.setuptools]
 packages = ["src"]
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "*_test.py", "Test*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
